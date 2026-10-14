@@ -1,8 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  
+  const projects = [
+    {
+      title: "Simple Personal Portfolio",
+      description: "A personal website built with HTML and CSS.",
+      image: "image/simple portfolio.png",
+      link: "https://github.com/CadiaoPinky/Simple-Portfolio" 
+    },
+    {
+      title: "Login Page",
+      description: "A Login Page built with HTML and CSS.",
+      image: "image/login page.png",
+      link: "https://github.com/CadiaoPinky/Login-Page" 
+    }
+  ];
+
+ 
   const projectsList = document.getElementById("projects-list");
 
-  if (projectsList && typeof projects !== "undefined") {
+  if (projectsList) {
+    projectsList.replaceChildren();
+
     projects.forEach(project => {
       const card = document.createElement("article");
       card.className = "card";
@@ -12,16 +31,24 @@ document.addEventListener("DOMContentLoaded", () => {
         imageHTML = `<img src="${project.image}" alt="${project.title}" style="width:100%; height:190px; object-fit:contain; border-radius:6px; margin-bottom:0.8rem;">`;
       }
 
+     
+      let linkHTML = "";
+      if (project.link) {
+        linkHTML = `<a href="${project.link}" target="_blank" class="btn" style="display:inline-block; margin-top:0.8rem; padding:0.5rem 1rem; background-color:beige; color:black; text-decoration:underline; border-radius:4px;">View Project</a>`;
+      }
+
       card.innerHTML = `
         ${imageHTML}
         <h3>${project.title}</h3>
         <p>${project.description}</p>
+        ${linkHTML}
       `;
 
       projectsList.appendChild(card);
     });
   }
 
+ 
   const form = document.getElementById("contact-form");
   const status = document.getElementById("form-status");
 
