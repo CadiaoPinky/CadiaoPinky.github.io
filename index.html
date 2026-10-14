@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+
+  <section id="home" class="section hero">
+    <div class="hero-container">
+      <div class="profile-frame">
+        <img src="image/profile.jpg" alt="Profile Photo" class="profile-img">
+      </div>
+      <div class="hero-text">
+        <h1>Pinky F. Cadiao</h1>
+        <p class="tagline" id="tagline"></p>
+        <p class="bio-short"> Frontend Developer.</p>
+        <a href="#projects" class="button">View My Projects</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card about-card">
+      <div class="about-info">
+        <p> Hi there, I'm Pinky Cadiao. I am a Information Technology student major in Web Development and Mobile 
+          who is passionate about the future of the web. My favorite way to spend my time is practicing and learning 
+        my layout skills. I treat web design as both my education and creative outlet.  </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Technical</h3>
+        <p>HTML5, CSS, Javascript</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>VS Code, GitHub, Figma</p>
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <p>Problem Solving, Collaboration, Communication, Adaptability</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    
+    <div id="projects-list" class="grid-3"></div>
+
+    <h3 class="sub-heading">Recent GitHub Repositories</h3>
+  
+    <div id="github-repos" class="grid-3"></div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p>Email: <a href="mailto:cadiaopinky18">cadiaopinky18@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/cadiaopinky@gmail.com" target="_blank">github.com/CadiaoPinky</a></p>
+      </div>
+
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-status"></p>
+      </form>
+    </div>
+  </section>
+  
+  <script src="projects.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
