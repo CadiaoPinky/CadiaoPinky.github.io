@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Simple Personal Portfolio",
       description: "A personal website built with HTML and CSS.",
-      image: " simple portfolio.png ",
+      image: "simple-portfolio.png",
       link: "https://github.com/CadiaoPinky/Simple-Portfolio" 
     },
     {
       title: "Login Page",
       description: "A Login Page built with HTML and CSS.",
-      image: " login page.png ",
+      image: "login-page.png",
       link: "https://github.com/CadiaoPinky/Login-Page" 
     }
   ];
