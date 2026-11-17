@@ -13,7 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "A Login Page built with HTML and CSS.",
       image: "login page.png",
       link: "https://github.com/CadiaoPinky/Login-Page" 
-    }
+    }, 
+    {
+      title: "Sleep Log",
+      description: "A simple sleep log for students. Record when you went to bed and when you woke up, and see your average sleep.",
+      image: "sleeplog.png",
+      link: "https://github.com/CadiaoPinky/Sleep-Log" 
+    } 
   ];
 
  
