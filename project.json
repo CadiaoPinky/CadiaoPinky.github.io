@@ -14,7 +14,7 @@
     },
      {
       "title" :"Sleep Log",
-      "description" : "Simple sleep log for students. Record when you went to bed and when you woke up,
+      "description" : "A simple sleep log for students. Record when you went to bed and when you woke up,
        and see your average sleep",
       "image": "simple portfolio.png",
       "link": "https://cadiaopinky.github.io/Sleep-Log/" 
