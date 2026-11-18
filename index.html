@@ -26,7 +26,7 @@
       </div>
       <div class="hero-text">
         <h1>Pinky F. Cadiao</h1>
-        <h4 class="bio-short" style="color: navajowhite;"> Frontend Developer.</h4>
+        <h4 class="bio-short">Frontend Developer.</h4>
         <p> Where creativity meets code. 
           I create simple and user-friendly websites 
           while still continously learning and growing as a developer.</p>
@@ -75,17 +75,35 @@
   <section id="contact" class="section">
     <h2>Contact</h2>
     <div class="contact-container">
-      <div class="contact-info">
-        <p>Email: <a href="mailto:cadiaopinky18@gmail.com">cadiaopinky18@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/CadiaoPinky" target="_blank">github.com/CadiaoPinky</a></p>
+      <div class="contact-info card">
+        <h3>Get in touch</h3>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:cadiaopinky18@gmail.com">cadiaopinky18@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/CadiaoPinky" target="_blank" rel="noopener">github.com/CadiaoPinky</a>
+          </li>
+        </ul>
       </div>
 
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <form id="contact-form" class="card">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
         <button type="submit" class="btn">Send Message</button>
-        <p id="form-status"></p>
+        <p id="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
   </section>
