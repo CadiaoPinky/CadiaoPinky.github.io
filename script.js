@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "A Login Page built with HTML and CSS.",
       image: "login page.png",
       link: "https://github.com/CadiaoPinky/Login-Page" 
-    }, 
-    {
+    },
+     {
       title: "Sleep Log",
       description: "A simple sleep log for students. Record when you went to bed and when you woke up, and see your average sleep.",
       image: "sleeplog.png",
@@ -34,13 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let imageHTML = "";
       if (project.image) {
-        imageHTML = `<img src="${project.image}" alt="${project.title}" style="width:100%; height:190px; object-fit:contain; border-radius:6px; margin-bottom:0.8rem;">`;
+        imageHTML = `<img src="${project.image}" alt="${project.title}" class="project-img">`;
       }
 
      
       let linkHTML = "";
       if (project.link) {
-        linkHTML = `<a href="${project.link}" target="_blank" class="btn" style="display:inline-block; margin-top:0.8rem; padding:0.5rem 1rem; background-color:beige; color:black; text-decoration:underline; border-radius:4px;">View Project</a>`;
+        linkHTML = `<a href="${project.link}" target="_blank" rel="noopener" class="btn project-link">View Project</a>`;
       }
 
       card.innerHTML = `
@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!name || !email || !message) {
         status.textContent = "Please complete all fields.";
+        status.className = "error";
         return;
       }
 
@@ -79,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `Name: ${name}\nEmail: ${email}\n\n${message}`
       );
 
+      status.className = "";
       status.textContent =
         "Opening your email application. Please send your message.";
 
